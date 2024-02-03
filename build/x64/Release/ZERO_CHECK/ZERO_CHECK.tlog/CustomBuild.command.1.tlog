@@ -1,0 +1,10 @@
+^C:\USERS\ADGSENPAI\CODE\QT-CMAKESTARTER\BUILD\CMAKEFILES\93B183C6F99EB5D34F8350461018AFD3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/adgsenpai/Code/QT-CMakeStarter -BC:/Users/adgsenpai/Code/QT-CMakeStarter/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/adgsenpai/Code/QT-CMakeStarter/build/MyQtProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
